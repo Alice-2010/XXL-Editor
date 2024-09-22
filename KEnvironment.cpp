@@ -304,7 +304,8 @@ void KEnvironment::loadLevel(int lvlNumber)
 			int objectIndex = 0;
 			for (CKObject *obj : this->levelObjects.categories[clcat].type[clid].objects) {
 				uint32_t nextObjOffset = lvlFile.readUint32();
-				obj->deserialize(this, &lvlFile, nextObjOffset - lvlFile.tell());
+				uint32_t objLength = nextObjOffset - lvlFile.tell();
+				obj->deserialize(this, &lvlFile, objLength);
 				assert(lvlFile.tell() == nextObjOffset);
 				++objectIndex;
 			}
