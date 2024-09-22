@@ -1522,7 +1522,7 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// kenv.addFactory<CKHeroAbilityConfigAlternativeRun>(); // (6, 139)
 	// kenv.addFactory<CKHeroAbilityConfigAlternativeWalk>(); // (6, 140)
 	// kenv.addFactory<CKAliceHeroAbilityConfigParry>(); // (6, 141)
-	// kenv.addFactory< CKAliceHeroAbilityConfigBackStab>(); // (6, 142)
+	// kenv.addFactory<CKAliceHeroAbilityConfigBackStab>(); // (6, 142)
 	// kenv.addFactory<CKAliceHeroAbilityConfigCoupDeGrace>(); // (6, 149)
 	// kenv.addFactory<CKAliceHeroAbilityConfigOffensiveDodge>(); // (6, 154)
 	// kenv.addFactory<CKCurve2DCpnt>(); // (6, 363)
@@ -1581,6 +1581,7 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	kenv.addFactory<CSGRootNode>(); // (11, 1)
 	kenv.addFactory<CSGSectorRoot>(); // (11, 2)
 	kenv.addFactory<CNode>(); // (11, 3)
+	kenv.addFactory<CSGAnchor>(); // (11, 4) - Not directly referenced in editor
 	kenv.addFactory<CKDynBSphereProjectile>(); // (11, 6)
 	kenv.addFactory<CSGLeaf>(); // (11, 8)
 	kenv.addFactory<CSGBranch>(); // (11, 9)
@@ -1593,12 +1594,15 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	kenv.addFactory<CKOBB>(); // (11, 18)
 	kenv.addFactory<CParticlesNodeFx>(); // (11, 19)
 	kenv.addFactory<CAnimatedNode>(); // (11, 21)
+	kenv.addFactory<CKAACylinder>(); // (11, 24) - Not directly referenced in editor
 	kenv.addFactory<CFogBoxNodeFx>(); // (11, 26)
 	kenv.addFactory<CTrailNodeFx>(); // (11, 27)
 	kenv.addFactory<CKPartlyUnknown<CNode, 28>>(); // (11, 28)
 	kenv.addFactory<CSGLight>(); // (11, 32)
+	kenv.addFactory<CCloudsNodeFx>(); // (11, 33) - Not directly referenced in editor
 	kenv.addFactory<CZoneNode>(); // (11, 34)
 	kenv.addFactory<CSpawnNode>(); // (11, 35)
+	kenv.addFactory<CKPartlyUnknown<CKSceneNode, 37>>(); // (11, 37) Find class name - Not directly referenced in editor
 	// (11, 68)
 	kenv.addFactory<CKPartlyUnknown<CNode, 389>>(); // (11, 389) CKWaterNodeFx? - Double check this
 
@@ -1618,6 +1622,7 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// kenv.addFactory<CKBlurNodeFx>(); // (12, 12)
 	// kenv.addFactory<CKChoreoKey>(); // (12, 15)
 	kenv.addFactory<CKPFGraphNode>(); // (12, 16)
+	kenv.addFactory<CKSas>(); // (12, 17) - Not directly referenced in editor
 	kenv.addFactory<CGround>(); // (12, 18)
 	kenv.addFactory<CDynamicGround>(); // (12, 19)
 	kenv.addFactory<CKFlaggedPath>(); // (12, 23)
@@ -1660,6 +1665,7 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// kenv.addFactory<CKSparkFxData>(); // (12, 147)
 	// kenv.addFactory<CKAccessorPointerInfoData>(); // (12, 153) - Why 2 classes with the same ID??
 	// kenv.addFactory<CKTimeScalingFxData>(); // (12, 153) - Why 2 classes with the same ID??
+	kenv.addFactory<CKDetectorBase>(); // (12, 156) - Not directly referenced in editor
 	kenv.addFactory<CKSectorDetector>(); // (12, 157)
 	kenv.addFactory<CMultiGeometry>(); // (12, 158)
 	// kenv.addFactory<CKTimeScalingNodeFx>(); // (12, 159)
@@ -1899,7 +1905,7 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	}
 	else if (kenv.platform == kenv.PLATFORM_WII)
 	{
-		// kenv.addFactory< Revolution_CKVideo>(); // (13, 41)
+		// kenv.addFactory<Revolution_CKVideo>(); // (13, 41)
 	}
 	// kenv.addFactory<CKAnmKeyFrameController>();// (13, 45)
 	// (13, 46)
