@@ -41,7 +41,7 @@
     "6": {
       "name": "Alice in Wonderland",
       "classInfoFiles": [
-        "Properties_Common.json",
+        "Properties_Alice.json",
         "Beacons_Other.json"
       ]
     },

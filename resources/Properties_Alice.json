@@ -1,0 +1,588 @@
+{
+  "classes": [
+    {
+      "name": "CKServiceManager",
+      "category": 0,
+      "id": 1
+    },
+    {
+      "name": "CKSoundManager",
+      "category": 0,
+      "id": 3,
+      "properties": {
+        "sizeFor_ksndmgrDings": "Num Tunes",
+        "ksndmgrDings": "Tune"
+      }
+    },
+    {
+      "name": "CKInput",
+      "category": 0,
+      "id": 4
+    },
+    {
+      "name": "CKServiceLife",
+      "category": 1,
+      "id": 1
+    },
+    {
+      "name": "CKSrvCollision",
+      "category": 1,
+      "id": 2
+    },
+    {
+      "name": "CKSrvCinematic",
+      "category": 1,
+      "id": 4
+    },
+    {
+      "name": "CKSrvPathFinding",
+      "category": 1,
+      "id": 6
+    },
+    {
+      "name": "CKSrvAvoidance",
+      "category": 1,
+      "id": 9
+    },
+    {
+      "name": "CKSrvSekensor",
+      "category": 1,
+      "id": 10
+    },
+    {
+      "name": "CKSrvBeacon",
+      "category": 1,
+      "id": 11
+    },
+    {
+      "name": "CKSrvProjectiles",
+      "category": 1,
+      "id": 13
+    },
+    {
+      "name": "CKSrvCounter",
+      "category": 1,
+      "id": 17
+    },
+    {
+      "name": "CKSrvTrigger",
+      "category": 1,
+      "id": 18
+    },
+    {
+      "name": "CKSrvDetect",
+      "category": 1,
+      "id": 19
+    },
+    {
+      "name": "CKSrvMusic",
+      "category": 1,
+      "id": 20
+    },
+    {
+      "name": "CKShadowCpnt",
+      "category": 6,
+      "id": 18
+    },
+    {
+      "name": "CKLogicalAnd",
+      "category": 8,
+      "id": 1
+    },
+    {
+      "name": "CKLogicalOr",
+      "category": 8,
+      "id": 2
+    },
+    {
+      "name": "CKPathFindingCinematicBloc",
+      "category": 8,
+      "id": 4
+    },
+    {
+      "name": "CKGroupBlocCinematicBlo",
+      "category": 8,
+      "id": 7
+    },
+    {
+      "name": "CKStartDoor",
+      "category": 8,
+      "id": 17
+    },
+    {
+      "name": "CKSekensorCinematicBloc",
+      "category": 8,
+      "id": 20
+    },
+    {
+      "name": "CKDisplayPictureCinematicBloc",
+      "category": 8,
+      "id": 22
+    },
+    {
+      "name": "CKManageCameraCinematicBloc",
+      "category": 8,
+      "id": 23
+    },
+    {
+      "category": 8,
+      "id": 25,
+      "name": "CKStartEventCinematicBloc",
+      "properties": {
+        "seEvtNode": {
+          "name": "Event trigger",
+          "elbName": "Déclencheur d'évènement"
+        }
+      }
+    },
+    {
+      "name": "CKPlaySoundCinematicBloc",
+      "category": 8,
+      "id": 28
+    },
+    {
+      "name": "CKPauseCinematicBloc",
+      "category": 8,
+      "id": 29
+    },
+    {
+      "name": "CKTeleportCinematicBloc",
+      "category": 8,
+      "id": 30
+    },
+    {
+      "name": "CKEndDoor",
+      "category": 8,
+      "id": 31
+    },
+    {
+      "name": "CKPlayVideoCinematicBloc",
+      "category": 8,
+      "id": 34
+    },
+    {
+      "name": "CKLockUnlockCinematicBloc",
+      "category": 8,
+      "id": 36
+    },
+    {
+      "name": "CAnimationDictionary",
+      "category": 9,
+      "id": 1
+    },
+    {
+      "name": "CTextureDictionary",
+      "category": 9,
+      "id": 2
+    },
+    {
+      "name": "CKSoundDictionary",
+      "category": 9,
+      "id": 3
+    },
+    {
+      "name": "CKSoundDictionaryID",
+      "category": 9,
+      "id": 4
+    },
+    {
+      "name": "CKParticleGeometry",
+      "category": 10,
+      "id": 1
+    },
+    {
+      "name": "CKGeometry",
+      "category": 10,
+      "id": 2
+    },
+    {
+      "name": "CKSkinGeometry",
+      "category": 10,
+      "id": 3
+    },
+    {
+      "name": "CSGRootNode",
+      "category": 11,
+      "id": 1
+    },
+    {
+      "name": "CSGSectorRoot",
+      "category": 11,
+      "id": 2
+    },
+    {
+      "name": "CNode",
+      "category": 11,
+      "id": 3
+    },
+    {
+      "name": "CKDynBSphereProjectile",
+      "category": 11,
+      "id": 4
+    },
+    {
+      "name": "CSGLeaf",
+      "category": 11,
+      "id": 8
+    },
+    {
+      "name": "CSGBranch",
+      "category": 11,
+      "id": 9
+    },
+    {
+      "name": "CSGBkgRootNode",
+      "category": 11,
+      "id": 10
+    },
+    {
+      "name": "CGlowNodeFx",
+      "category": 11,
+      "id": 11
+    },
+    {
+      "name": "CClone",
+      "category": 11,
+      "id": 12
+    },
+    {
+      "name": "CKBoundingSphere",
+      "category": 11,
+      "id": 14
+    },
+    {
+      "name": "CKDynamicBoundingSphere",
+      "category": 11,
+      "id": 15
+    },
+    {
+      "name": "CKAABB",
+      "category": 11,
+      "id": 17
+    },
+    {
+      "name": "CKOBB",
+      "category": 11,
+      "id": 18
+    },
+    {
+      "name": "CParticlesNodeFx",
+      "category": 11,
+      "id": 19
+    },
+    {
+      "name": "CAnimatedNode",
+      "category": 11,
+      "id": 21
+    },
+    {
+      "name": "CFogBoxNodeFx",
+      "category": 11,
+      "id": 26
+    },
+    {
+      "name": "CTrailNodeFx",
+      "category": 11,
+      "id": 27
+    },
+    {
+      "name": "CSGLight",
+      "category": 11,
+      "id": 32
+    },
+    {
+      "name": "CZoneNode",
+      "category": 11,
+      "id": 34
+    },
+    {
+      "name": "CSpawnNode",
+      "category": 11,
+      "id": 35
+    },
+    {
+      "name": "CKPFGraphTransition",
+      "category": 12,
+      "id": 2
+    },
+    {
+      "name": "CKBundle",
+      "category": 12,
+      "id": 3
+    },
+    {
+      "name": "CKSector",
+      "category": 12,
+      "id": 4
+    },
+    {
+      "name": "CKLevel",
+      "category": 12,
+      "id": 5
+    },
+    {
+      "name": "CKCoreManager",
+      "category": 12,
+      "id": 9
+    },
+    {
+      "name": "CKSpline4",
+      "category": 12,
+      "id": 11
+    },
+    {
+      "name": "CKPFGraphNode",
+      "category": 12,
+      "id": 16
+    },
+    {
+      "name": "CGround",
+      "category": 12,
+      "id": 18
+    },
+    {
+      "name": "CKSpline4",
+      "category": 12,
+      "id": 11
+    },
+    {
+      "name": "CDynamicGround",
+      "category": 12,
+      "id": 19
+    },
+    {
+      "name": "CKFlaggedPath",
+      "category": 12,
+      "id": 23
+    },
+    {
+      "name": "CKSpline4L",
+      "category": 12,
+      "id": 31
+    },
+    {
+      "name": "CKVibrationData",
+      "category": 12,
+      "id": 51
+    },
+    {
+      "name": "CLocManager",
+      "category": 12,
+      "id": 59
+    },
+    {
+      "name": "CKHDRNodeFx",
+      "category": 12,
+      "id": 62
+    },
+    {
+      "name": "CKMeshKluster",
+      "category": 12,
+      "id": 66
+    },
+    {
+      "name": "CKBeaconKluster",
+      "category": 12,
+      "id": 73
+    },
+    {
+      "name": "CKFlashNode2dFx",
+      "category": 12,
+      "id": 87
+    },
+    {
+      "name": "CKFilterNode2dFx",
+      "category": 12,
+      "id": 103
+    },
+    {
+      "category": 12,
+      "id": 135,
+      "name": "CKTimeCounter",
+      "properties": {
+        "event1": {
+          "name": "Max time reached",
+          "elbName": "Valeur max atteinte"
+        },
+        "event2": {
+          "name": "Max loop reached",
+          "elbName": "Loop max atteint"
+        }
+      }
+    },
+    {
+      "category": 12,
+      "id": 136,
+      "name": "CKIntegerCounter",
+      "properties": {
+        "event1": {
+          "name": "Max reached",
+          "elbName": "Valeur max atteinte"
+        },
+        "event2": {
+          "name": "Min reached",
+          "elbName": "Valeur min atteinte"
+        }
+      }
+    },
+    {
+      "name": "CKCombiner",
+      "category": 12,
+      "id": 139
+    },
+    {
+      "name": "CKComparator",
+      "category": 12,
+      "id": 140
+    },
+    {
+      "name": "CKComparedData",
+      "category": 12,
+      "id": 141
+    },
+    {
+      "name": "CKTrigger",
+      "category": 12,
+      "id": 142
+    },
+    {
+      "name": "CKSectorDetector",
+      "category": 12,
+      "id": 157
+    },
+    {
+      "name": "CMultiGeometry",
+      "category": 12,
+      "id": 158
+    },
+    {
+      "category": 12,
+      "id": 160,
+      "name": "CKDetectorEvent",
+      "properties": {
+        "deOnEnter": {
+          "name": "Entrance",
+          "elbName": "Entrée"
+        },
+        "deOnExit": {
+          "name": "Exit",
+          "elbName": "Sortie"
+        },
+        "deOnPresence": {
+          "name": "Presence",
+          "elbName": "Présence"
+        }
+      }
+    },
+    {
+      "name": "CKDetectedMovable",
+      "category": 12,
+      "id": 161
+    },
+    {
+      "name": "CKTriggerDomain",
+      "category": 12,
+      "id": 163
+    },
+    {
+      "name": "CSGHotSpot",
+      "category": 12,
+      "id": 173
+    },
+    {
+      "name": "CKMusicPlaylist",
+      "category": 12,
+      "id": 187
+    },
+    {
+      "name": "CKDetectorMusic",
+      "category": 12,
+      "id": 189
+    },
+    {
+      "name": "CMultiGeometryBasic",
+      "category": 12,
+      "id": 197
+    },
+    {
+      "name": "CKDistortionNodeFx",
+      "category": 12,
+      "id": 227
+    },
+    {
+      "name": "CKTriggerSynchro",
+      "category": 12,
+      "id": 347
+    },
+    {
+      "name": "CKStreamObject",
+      "category": 12,
+      "id": 361
+    },
+    {
+      "name": "CKStreamWave",
+      "category": 12,
+      "id": 362
+    },
+    {
+      "name": "CKDisplayBox",
+      "category": 12,
+      "id": 385
+    },
+    {
+      "name": "CKAliceGameState",
+      "category": 12,
+      "id": 485
+    },
+    {
+      "name": "CCloneManager",
+      "category": 13,
+      "id": 3
+    },
+    {
+      "name": "CKPBuffer",
+      "category": 13,
+      "id": 13
+    },
+    {
+      "name": "CBillboard2d",
+      "category": 13,
+      "id": 15
+    },
+    {
+      "name": "CKSpawnPoolParams",
+      "category": 13,
+      "id": 24
+    },
+    {
+      "name": "CKFlashUI",
+      "category": 13,
+      "id": 27
+    },
+    {
+      "name": "CKFlashManager",
+      "category": 13,
+      "id": 28
+    },
+    {
+      "name": "CKFlashText",
+      "category": 13,
+      "id": 31
+    },
+    {
+      "name": "CLightManager",
+      "category": 13,
+      "id": 36
+    },
+    {
+      "name": "CLightSet",
+      "category": 13,
+      "id": 37
+    },
+    {
+      "name": "CKSpawnPool",
+      "category": 13,
+      "id": 47
+    }
+  ]
+}

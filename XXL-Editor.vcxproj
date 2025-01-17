@@ -279,6 +279,7 @@
     <None Include="resources\Beacons_XXL2.json" />
     <None Include="resources\Encyclopedia.json" />
     <None Include="resources\EventNamesXXL1.json" />
+    <None Include="resources\Properties_Alice.json" />
     <None Include="resources\Properties_Common.json" />
     <None Include="resources\Properties_XXL1.json" />
     <None Include="resources\Properties_XXL2.json" />

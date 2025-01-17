@@ -395,6 +395,9 @@
     <None Include="resources\Beacons_Arthur.json">
       <Filter>Fichiers de ressources</Filter>
     </None>
+    <None Include="resources\Properties_Alice.json">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="NatvisFile.natvis" />
