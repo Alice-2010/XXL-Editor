@@ -1566,7 +1566,8 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// Dictionaries - Done
 	kenv.addFactory<CAnimationDictionary>(); // (9, 1)
 	kenv.addFactory<CTextureDictionary>(); // (9, 2)
-	kenv.addFactory<CKSoundDictionary>(); // (9, 3)
+	if (kenv.platform == kenv.PLATFORM_PC)
+		kenv.addFactory<CKSoundDictionary>(); // (9, 3)
 	kenv.addFactory<CKSoundDictionaryID>(); // (9, 4)
 	// kenv.addFactory<CKCameraAnimationDictionary>(); // (9, 83)
 
@@ -1880,7 +1881,8 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// Graphical - Done
 	// kenv.addFactory<CRenderer>(); // (13, 1)
 	kenv.addFactory<CCloneManager>(); // (13, 3)
-	// kenv.addFactory<CAnimationManager>(); // (13, 8)
+	if (kenv.platform != kenv.PLATFORM_WII)
+		kenv.addFactory<CAnimationManager>(); // (13, 8)
 	// (13, 10)
 	kenv.addFactory<CKPBuffer>(); // (13, 13)
 	// (13, 14)
@@ -1916,7 +1918,8 @@ static void registerClassesForAlice(KEnvironment& kenv)
 	// (13, 52)
 	// kenv.addFactory<CKBlenderController>();// (13, 53)
 	// kenv.addFactory<CKVideoSegment>(); // (13, 54)
-	// kenv.addFactory<CSectorAnimation>(); // (13, 55)
+	if (kenv.platform != kenv.PLATFORM_WII)
+		kenv.addFactory<CSectorAnimation>(); // (13, 55)
 	// (13, 57)
 	// (13, 67)
 	// (13, 78)
@@ -2020,6 +2023,10 @@ static void registerClassesForHTTYD(KEnvironment& kenv)
 	kenv.addFactory<CKTydGameState>();
 	if (kenv.platform == kenv.PLATFORM_PC)
 		kenv.addFactory<CKSoundDictionary>();
+	if (kenv.platform != kenv.PLATFORM_WII) {
+		kenv.addFactory<CAnimationManager>();
+		kenv.addFactory<CSectorAnimation>();
+	}
 }
 
 void ClassRegister::registerClasses(KEnvironment& kenv, int gameVersion, int gamePlatform, bool isRemaster)
